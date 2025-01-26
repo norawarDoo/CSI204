@@ -1,0 +1,81 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator {
+    width: 350px;
+    height: auto;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.display {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* สร้างคอลัมน์สำหรับปุ่ม */
+    grid-auto-rows: 70px;
+    gap: 10px;
+}
+
+
+.TnT {
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.TnT:hover {
+    background-color: #555;
+}
+
+.operator {
+    background-color: #ff9500; /* ปุ่มเครื่องหมายคำนวณ */
+}
+
+.function {
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.equal {
+    background-color: #ff9500;
+    grid-column: span 1; /* ปุ่มแสดงผลลัพธ์ขยาย 2 คอลัมน์ */
+}
+
+.zero {
+    grid-column: span 2; /* ปุ่มศูนย์ */
+}
